@@ -1,0 +1,66 @@
+/* NOTE: extracted CSS from practiceDay1exe5.html */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Tùy chỉnh Navbar */
+.navbar {
+    background-color: #212529 !important; /* Màu đen đậm */
+    padding: 0.8rem 1rem;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.nav-link {
+    color: #ccc !important;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+
+/* Container chính */
+.main-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid #dee2e6;
+}
+
+/* Nút Action trong bảng */
+.btn-action-edit {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    margin-right: 5px;
+}
+.btn-action-delete {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Tùy chỉnh Modal (Popup) */
+.modal-header {
+    background-color: #0d6efd; /* Màu xanh dương giống hình */
+    color: white;
+}
+.modal-title {
+    font-weight: 500;
+}
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%); /* Làm nút X màu trắng */
+}
+
+/* Form controls trong modal */
+.form-label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.9rem;
+}

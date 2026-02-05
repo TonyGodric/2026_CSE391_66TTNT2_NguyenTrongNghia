@@ -1,0 +1,16 @@
+
+    table {
+        width: 100%;            /* Làm bảng rộng hết màn hình */
+        border-collapse: collapse; /* Gộp viền lại cho thanh mảnh */
+        font-family: Arial, sans-serif;
+        color: rgb(5, 51, 51);
+    }
+    td {
+        border: 1px solid #333; /* Tạo đường kẻ rõ ràng hơn */
+        padding: 15px;          /* Tạo khoảng trống bên trong ô cho thoáng */
+        text-align: center;     /* Căn chữ ra giữa ô */
+    }
+    /* Thêm màu cho hàng chẵn để dễ nhìn */
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }

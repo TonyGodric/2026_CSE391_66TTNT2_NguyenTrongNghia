@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <section>
+                <h2 class="section-title">Basic Info</h2>
+                <div class="group-form">
+                    <label for="employee-id">Employee ID:</label>
+                    <span id="employee-id">9</span>
+                </div>
+                <div class="group-form">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" value="Nguyen">
+                </div>
+                <div class="group-form">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" value="An">
+                </div>
+                <div class="group-form">
+                    <label>Gender:</label>
+                    <div class="ratio-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+                <div class="group-form">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" value="Staff">
+                </div>
+                <div class="group-form">
+                    <label for="suffix">Suffix:</label>
+                    <input type="text" id="suffix" name="suffix" value="Jr">
+                </div>
+                <div class="group-form">
+                    <label for="birth-date">Birth Date:</label>
+                    <input type="date" id="birth-date" name="birth-date" value="1990-01-01">
+                </div>
+                <div class="group-form">
+                    <label for="hire-date">Hire Date:</label>
+                    <input type="date" id="hire-date" name="hire-date" value="2020-01-15">
+                </div>
+                <div class="group-form">
+                    <label for="ssn">SSN# (if applicable):</label>
+                    <input type="text" id="ssn" name="ssn" value="123-45-6789">
+                </div>
+                <div class="group-form">
+                    <label for="report-to">Report to:</label>
+                    <select id="report-to" name="report-to">
+                        <option value="1">Manager A</option>
+                        <option value="2">Manager B</option>
+                        <option value="3">Manager C</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Contact Info</h2>
+                <div class="group-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="an.nguyen@example.com">
+                </div>
+                <div class="group-form">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" value="123 Main St, Cityville">
+                </div>
+                <div class="group-form">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" value="Cityville">
+                </div>
+                <div class="group-form">
+                    <label for="region">Region:</label>
+                    <input type="text" id="region" name="region" value="North America">
+                </div>
+                <div class="group-form">
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="text" id="postal-code" name="postal-code" value="12345">
+                </div>
+                <div class="group-form">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="us">United States</option>
+                        <option value="vn">Vietnam</option>
+                        <option value="jp">Japan</option>
+                    </select>
+                </div>
+                <div class="group-form">
+                    <label for="us-home-phone">US Home Phone:</label>
+                    <input type="text" id="us-home-phone" name="us-home-phone" value="(555) 123-4567">
+                </div>
+                <div class="group-form">
+                    <label for="photo">Photo:</label>
+                    <input type="file" id="photo" name="photo">
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Optional Info</h2>
+                <div class="group-form">
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes" name="notes" rows="4" cols="50">No additional notes.</textarea>
+                </div>
+                <div class="group-form">
+                    <label for="preferred-shift">Preferred Shift:</label>
+                    <select id="preferred-shift" name="preferred-shift">
+                        <option value="regular">Regular</option>
+                        <option value="graveyard">Graveyard</option>
+                    </select>
+                </div>
+                <div class="group-form">
+                    <label for="active">Active?</label>
+                    <input type="checkbox" id="active" name="active" checked>
+                </div>
+                <div class="group-form">
+                    <label for="captcha">Are you human?</label>
+                    <div class="captcha-box">
+                        <span class="captcha-text">TIDAWO</span>
+                        <input type="text" id="captcha" name="captcha">
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="form-actions">
+                <button type="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
