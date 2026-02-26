@@ -1,0 +1,68 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: wheat;
+    display:flex;
+    justify-content: center;
+    padding: 50px;
+    line-height: 1.6;
+
+}
+.container{
+    max-width: 1500px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: auto;
+}
+.main-title{
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+.content-wrapper{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+
+}
+.card {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Soft drop shadow */
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+}
+
+.author strong {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.role {
+    font-size: 0.75rem;
+    color: #4a90e2; /* Blue color for the role */
+}
+
+/* Right Text Content */
+.text-content {
+    flex: 1.5;
+    font-size: 15 px;
+    padding-left:20px;
+}
+
+.text-content p {
+    margin-bottom: 25px;
+}
