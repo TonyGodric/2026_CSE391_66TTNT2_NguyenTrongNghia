@@ -1,0 +1,118 @@
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: cyan;
+}
+
+/* header navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5px;                 /* no space in “rem” */
+    background-color: rgb(233, 225, 210);
+    position: absolute;
+    width: 90%;
+    z-index: 10;
+    opacity: 0.5;
+}
+
+#page-logo a {
+    font-family: "Oleo Script", cursive;
+    color: rgb(186, 192, 34);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: rgb(145, 186, 55);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero section */
+#hero {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+        url("../images/places/ocean.jpg");   /* ← go up one level */
+    justify-content: space-between;
+    padding: 100px 5px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#hero-content h1 {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    opacity: 0.8;
+}
+
+#hero-content a {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Highlight section */
+#highlight{
+    display: flex;
+    text-align: center;
+    padding: 50px 5px;
+}
+#destinations{
+    display: flex;
+    justify-content: space-around;
+    padding:0;
+    gap: 20px;
+}
+.destination img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.destination p {
+  margin-top: 15px;
+  color: #44bba4; 
+}
+/* 5. Footer */
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
