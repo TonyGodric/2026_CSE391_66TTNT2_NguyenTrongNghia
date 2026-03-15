@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        .success {
+            color: green;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .strength-wrapper {
+            margin-top: 10px;
+        }
+
+        .strength-track {
+            width: 100%;
+            height: 5px;
+            background-color: #e0e0e0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .strength-fill {
+            height: 100%;
+            width: 0%;
+            background-color: red;
+            transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .strength-text {
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Form Validation</h2>
+        <div id="successMessage" class="success">Đăng ký thành công! 🎉 <span id="userName"></span></div>
+        <form id="registrationForm" class="row g-3">
+            <div class="col-md-4">
+                <label for="validationServer01" class="form-label">Họ Và Tên</label>
+                <input type="text" class="form-control" id="validationServer01" required>
+                <span class="error" id="error-validationServer01"></span>
+                <small id="nameCounter" class="d-block text-end mt-1" style="font-size:0.75rem; color:#6b7280;">0/50</small>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer02" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationServer02" required>
+                <span class="error" id="error-validationServer02"></span>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServerUsername" class="form-label">SDT</label>
+                <input type="text" class="form-control" id="validationServerUsername" required>
+                <span class="error" id="error-validationServerUsername"></span>
+            </div>
+            <div class="col-md-6">
+                <label for="validationServer03" class="form-label">Mật khẩu</label>
+                <input type="password" class="form-control" id="validationServer03" required>
+                <span class="error" id="error-validationServer03"></span>
+                <div class="strength-wrapper">
+                    <div class="strength-track">
+                        <div id="strengthFill" class="strength-fill"></div>
+                    </div>
+                    <small id="strengthText" class="strength-text"></small>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="validationServer04" class="form-label">Xác nhận mật khẩu</label>
+                <input type="password" class="form-control" id="validationServer04" required>
+                <span class="error" id="error-validationServer04"></span>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Giới Tính</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="Nam" required>
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="Nữ" required>
+                    <label for="female">Nữ</label>
+                </div>
+                <span class="error" id="error-gender"></span>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="invalidCheck3" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                        Agree to terms and conditions
+                    </label>
+                    <span class="error" id="error-invalidCheck3"></span>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+
+    <script src("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/2.1.js"></script>
+</body>
+
+</html>
